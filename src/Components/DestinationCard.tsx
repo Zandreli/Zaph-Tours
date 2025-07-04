@@ -41,7 +41,7 @@ export default function DestinationCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">View Details</Button>
+        <Button size="small" color="primary" variant="contained">View Details</Button>
       </CardActions>
     </Card>
   );

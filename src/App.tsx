@@ -1,5 +1,8 @@
-import { Toolbar } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
 import { Routes, Route } from "react-router-dom";
+import CssBaseline from "@mui/material/CssBaseline";
+import theme from "./Components/theme";
 import Navbar from "./Components/Navbar";
 
 import Home from "./Pages/Home";
@@ -11,6 +14,8 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Navbar />
       <Toolbar></Toolbar>
       <Routes>
@@ -20,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer /> {/* all pages */}
+    </ThemeProvider>
     </>
   );
 }

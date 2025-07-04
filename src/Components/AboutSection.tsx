@@ -9,7 +9,7 @@ export default function AboutSection() {
         fontFamily: "'Pacifico', cursive",
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="md" color="primary">
         <Typography
           variant="h4"
           component="h2"

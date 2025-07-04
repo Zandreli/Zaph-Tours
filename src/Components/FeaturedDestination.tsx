@@ -50,7 +50,7 @@ const destinations = [
 
 export default function FeaturedDestination() {
   return (
-    <Container sx={{ py: 8 }}>
+    <Container sx={{ py: 8, color: { primary:{ light: "#81c784", main:"#4caf50", dark:"#388e3c"}} }}>
       <Typography
         variant="h4"
         component={"h2"}
@@ -94,7 +94,7 @@ export default function FeaturedDestination() {
                   {destination.price}
                 </Typography>
                 <CardActions>
-                  <Button sx={{ mt: 2 }} variant="contained" color="secondary" size="small">
+                  <Button sx={{ mt: 2 }} color="secondary" variant="contained" size="small">
                     Book Now
                   </Button>
                 </CardActions>
